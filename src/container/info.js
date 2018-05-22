@@ -2,6 +2,11 @@ import React from 'react';
 
 import Header from '../components/Header'
 import Profile from '../components/profile'
+import ApplyButtons from '../components/ApplyButtons'
+
+const applyACtion = (e) => {
+  console.log("押されたよー")
+}
 
 const Info = (props) => {
   const profiles = {
@@ -47,6 +52,11 @@ const Info = (props) => {
                 sex={profiles[path].sex}
               />
               <p>{profiles[path].description}</p>
+              <ApplyButtons
+                applyText="投票する"
+                applyAction={applyACtion}
+                cancelLink="/frends/"
+              />
             </React.Fragment>
           )
         } else {
