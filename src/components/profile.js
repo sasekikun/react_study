@@ -8,9 +8,9 @@ import '../stylesheets/profile.css'
 const enhance = compose()
 
 const Profile = enhance(props => {
-  const { img, name, type, age, sex, link } = props
+  const { img, name, type, age, sex, link, style } = props
   return (
-    <div className="profileCard">
+    <div className="profileCard" style={style}>
       <img src={img} className="profileImg" />
       <p>名前：{name}</p>
       <p>種別：{type}</p>

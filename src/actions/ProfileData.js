@@ -7,6 +7,30 @@ const profiles = {
     sex:"メス",
     description:"壁での爪とぎやめてほしい"
   },
+  chibi: {
+    img:"/images/chibi.jpg",
+    name:"ちび",
+    type:"猫",
+    age:"1歳0ヶ月",
+    sex:"メス",
+    description:" 元野良猫"
+  },
+  bubu: {
+    img:"/images/bubu.jpg",
+    name:"ぶぶ",
+    type:"猫",
+    age:"1歳0ヶ月",
+    sex:"オス",
+    description:"ちびの子供"
+  },
+  beru: {
+    img:"/images/beru.jpg",
+    name:"ベル",
+    type:"猫",
+    age:"1歳0ヶ月",
+    sex:"オス",
+    description:"ちびの子供 5.8kg"
+  },
   basuteto: {
     img:"/images/basuteto.jpg",
     name:"バステト神",
