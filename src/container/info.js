@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from '../components/Header';
+import Header from '../components/Header'
 import Profile from '../components/profile'
 
 const Info = (props) => {
@@ -35,14 +35,26 @@ const Info = (props) => {
     <div>
       <Header />
       <h1>Profile</h1>
-      <Profile
-        img={profiles[path].img}
-        name={profiles[path].name}
-        type={profiles[path].type}
-        age={profiles[path].age}
-        sex={profiles[path].sex}
-      />
-      <p>{profiles[path].description}</p>
+      {(() => {
+        if (profiles[path] !== undefined) {
+          return (
+            <React.Fragment>
+              <Profile
+                img={profiles[path].img}
+                name={profiles[path].name}
+                type={profiles[path].type}
+                age={profiles[path].age}
+                sex={profiles[path].sex}
+              />
+              <p>{profiles[path].description}</p>
+            </React.Fragment>
+          )
+        } else {
+          return (
+            <p>存在しません</p>
+          )
+        }
+      })()}
     </div>
   )
 }
