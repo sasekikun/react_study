@@ -14,6 +14,7 @@ const Frends = () => {
         type="猫"
         age="1歳2ヶ月"
         sex="メス"
+        link="kinako"
       />
       <Profile
         img="/images/basuteto.jpg"
@@ -21,6 +22,7 @@ const Frends = () => {
         type="猫"
         age="0歳8ヶ月"
         sex="メス"
+        link="basuteto"
       />
       <Profile
         img="/images/anzu.jpg"
@@ -28,6 +30,7 @@ const Frends = () => {
         type="モルモット"
         age="3歳4ヶ月"
         sex="メス"
+        link="anzu"
       />
     </div>
   )
