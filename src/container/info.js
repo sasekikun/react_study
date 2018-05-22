@@ -32,7 +32,7 @@ const Info = (props) => {
               <ApplyButtons
                 applyText="投票する"
                 applyAction={applyACtion}
-                cancelLink="/frends/"
+                cancelLink="/friends/"
               />
             </React.Fragment>
           )

@@ -5,12 +5,12 @@ import Profile from '../components/profile'
 
 import ProfileDatas from '../actions/ProfileData'
 
-const Frends = () => {
+const Friends = () => {
   const datas = ProfileDatas
   return (
     <div>
       <Header />
-      <h1>Frends</h1>
+      <h1>Friends</h1>
       {Object.keys(datas)
         .map(profile => {
           return (
@@ -28,4 +28,4 @@ const Frends = () => {
   )
 }
 
-export default Frends
+export default Friends

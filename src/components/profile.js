@@ -19,7 +19,7 @@ const Profile = enhance(props => {
       {(() => {
         if (link !== undefined) {
           return (
-            <p><a href={"/frends/" + link}>詳細ページへ</a></p>
+            <p><a href={"/friends/" + link}>詳細ページへ</a></p>
           )
         }
       })()}

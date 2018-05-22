@@ -3,15 +3,15 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import './App.css';
 
 import Home from './container/home';
-import Frends from './container/frends';
+import Friends from './container/friends';
 import Info from './container/info';
 
 const App = () => (
   <BrowserRouter>
     <div>
       <Route exact path='/' component={Home} />
-      <Route exact path='/frends' component={Frends} />
-      <Route exact path='/frends/:name' component={Info} />
+      <Route exact path='/friends' component={Friends} />
+      <Route exact path='/friends/:name' component={Info} />
     </div>
   </BrowserRouter>
 )

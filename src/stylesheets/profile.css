@@ -4,6 +4,7 @@
   width: 200px;
   border: solid 1px;
   background-color: #eee;
+  display:inline-block;
 }
 
 .profileImg {
