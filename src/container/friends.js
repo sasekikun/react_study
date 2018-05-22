@@ -15,6 +15,7 @@ const Friends = () => {
         .map(profile => {
           return (
             <Profile
+              key={profile}
               img={ProfileDatas[profile].img}
               name={ProfileDatas[profile].name}
               type={ProfileDatas[profile].type}
