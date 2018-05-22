@@ -10,7 +10,8 @@ const Friends = () => {
   return (
     <div>
       <Header />
-      <h1>Friends</h1>
+      <h1>一覧ページ</h1>
+      <p>検索は<a href="/search">こちら</a>から</p>
       {Object.keys(datas)
         .map(profile => {
           return (

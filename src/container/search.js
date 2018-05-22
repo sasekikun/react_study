@@ -4,7 +4,6 @@ import TextField from 'material-ui/TextField'
 
 import Header from '../components/Header'
 import ApplyButtons from '../components/ApplyButtons'
-import Profile from '../components/profile'
 
 const applyACtion = (e) => {
   console.log("検索するよー")
@@ -19,7 +18,7 @@ const Home = () => {
       <ApplyButtons
         applyText="検索する"
         applyAction={applyACtion}
-        cancelLink="/frends"
+        cancelLink="/friends"
       />
     </div>
   )
