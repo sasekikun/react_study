@@ -6,7 +6,7 @@ import '../stylesheets/profile.css'
 const enhance = compose()
 
 const Profile = enhance(props => {
-  const { img, name, type, age, sex, link, style } = props
+  const { img, name, type, age, sex, link, style, master } = props
   return (
     <div className="profileCard" style={style}>
       <img src={img} className="profileImg" alt={name} />
@@ -14,6 +14,7 @@ const Profile = enhance(props => {
       <p>種別：{type}</p>
       <p>年齢：{age}</p>
       <p>性別：{sex}</p>
+      <p>飼主：{master}</p>
       {(() => {
         if (link !== undefined) {
           return (

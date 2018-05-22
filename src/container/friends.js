@@ -21,6 +21,7 @@ const Friends = () => {
               type={ProfileDatas[profile].type}
               age={ProfileDatas[profile].age}
               sex={ProfileDatas[profile].sex}
+              master={ProfileDatas[profile].master}
               link={profile}
             />
           )

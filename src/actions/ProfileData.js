@@ -5,6 +5,7 @@ const profiles = {
     type:"猫",
     age:"1歳2ヶ月",
     sex:"メス",
+    master:"fujix",
     description:"壁での爪とぎやめてほしい"
   },
   chibi: {
@@ -13,6 +14,7 @@ const profiles = {
     type:"猫",
     age:"1歳0ヶ月",
     sex:"メス",
+    master:"kamawo",
     description:" 元野良猫"
   },
   bubu: {
@@ -21,6 +23,7 @@ const profiles = {
     type:"猫",
     age:"1歳0ヶ月",
     sex:"オス",
+    master:"kamawo",
     description:"ちびの子供"
   },
   beru: {
@@ -29,6 +32,7 @@ const profiles = {
     type:"猫",
     age:"1歳0ヶ月",
     sex:"オス",
+    master:"kamawo",
     description:"ちびの子供 5.8kg"
   },
   basuteto: {
@@ -37,6 +41,7 @@ const profiles = {
     type:"猫",
     age:"0歳8ヶ月",
     sex:"メス",
+    master:"xsota",
     description:"にゃー↑にゃー↓と呼ばれる方が多い"
   },
   anzu: {
@@ -45,6 +50,7 @@ const profiles = {
     type:"モルモット",
     age:"3歳4ヶ月",
     sex:"メス",
+    master:"kamawo",
     description:"今回のメンツの中で唯一猫じゃない"
   }
 }

@@ -6,8 +6,9 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <h1>Home</h1>
-      <p>5/24 React勉強会</p>
+      <h1>株式会社させきくん各員のペット紹介</h1>
+      <p>5/24 React勉強会用のページです</p>
+      <p><a href="/friends">こちら</a>からどうぞ！</p>
     </div>
   )
 }

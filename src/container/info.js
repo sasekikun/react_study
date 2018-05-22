@@ -27,6 +27,7 @@ const Info = (props) => {
                 type={profiles[path].type}
                 age={profiles[path].age}
                 sex={profiles[path].sex}
+                master={profiles[path].master}
               />
               <p>{profiles[path].description}</p>
               <ApplyButtons
