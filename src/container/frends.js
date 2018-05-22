@@ -3,35 +3,27 @@ import React from 'react';
 import Header from '../components/Header'
 import Profile from '../components/profile'
 
+import ProfileDatas from '../actions/ProfileData'
+
 const Frends = () => {
+  const datas = ProfileDatas
   return (
     <div>
       <Header />
       <h1>Frends</h1>
-      <Profile
-        img="/images/kinako.jpg"
-        name="きなこ"
-        type="猫"
-        age="1歳2ヶ月"
-        sex="メス"
-        link="kinako"
-      />
-      <Profile
-        img="/images/basuteto.jpg"
-        name="バステト神"
-        type="猫"
-        age="0歳8ヶ月"
-        sex="メス"
-        link="basuteto"
-      />
-      <Profile
-        img="/images/anzu.jpg"
-        name="杏子"
-        type="モルモット"
-        age="3歳4ヶ月"
-        sex="メス"
-        link="anzu"
-      />
+      {Object.keys(datas)
+        .map(profile => {
+          return (
+            <Profile
+              img={ProfileDatas[profile].img}
+              name={ProfileDatas[profile].name}
+              type={ProfileDatas[profile].type}
+              age={ProfileDatas[profile].age}
+              sex={ProfileDatas[profile].sex}
+              link={profile}
+            />
+          )
+      })}
     </div>
   )
 }
