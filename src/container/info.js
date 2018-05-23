@@ -22,12 +22,7 @@ const Info = (props) => {
           return (
             <React.Fragment>
               <Profile
-                img={profiles[path].img}
-                name={profiles[path].name}
-                type={profiles[path].type}
-                age={profiles[path].age}
-                sex={profiles[path].sex}
-                master={profiles[path].master}
+                profile={profiles[path]}
               />
               <p>{profiles[path].description}</p>
               <ApplyButtons

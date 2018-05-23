@@ -13,17 +13,12 @@ const Friends = () => {
       <h1>一覧ページ</h1>
       <p>検索は<a href="/search">こちら</a>から</p>
       {Object.keys(datas)
-        .map(profile => {
+        .map(key => {
           return (
             <Profile
-              key={profile}
-              img={ProfileDatas[profile].img}
-              name={ProfileDatas[profile].name}
-              type={ProfileDatas[profile].type}
-              age={ProfileDatas[profile].age}
-              sex={ProfileDatas[profile].sex}
-              master={ProfileDatas[profile].master}
-              link={profile}
+              key={key}
+              profile={ProfileDatas[key]}
+              link={key}
             />
           )
       })}
