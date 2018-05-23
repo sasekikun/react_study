@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from '../components/Header'
 import Profile from '../components/Profile'
+import Link from '../components/Link'
 
 import ProfileDatas from '../actions/ProfileData'
 
@@ -10,18 +11,20 @@ const Friends = () => {
   return (
     <div>
       <Header />
-      <h1>一覧ページ</h1>
-      <p>検索は<a href="/search">こちら</a>から</p>
-      {Object.keys(datas)
-        .map(key => {
-          return (
-            <Profile
-              key={key}
-              profile={ProfileDatas[key]}
-              link={key}
-            />
-          )
-      })}
+      <div style={{margin: '30px'}}>
+        <h1>一覧ページ</h1>
+        <Link text="登録はこちら" anchor="/registration" />
+        {Object.keys(datas)
+          .map(key => {
+            return (
+              <Profile
+                key={key}
+                profile={ProfileDatas[key]}
+                link={key}
+              />
+            )
+        })}
+      </div>
     </div>
   )
 }
