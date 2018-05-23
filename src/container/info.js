@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '../components/Header'
-import Profile from '../components/profile'
+import Profile from '../components/Profile'
 import ApplyButtons from '../components/ApplyButtons'
 import Paragraph from '../components/Paragraph'
 
