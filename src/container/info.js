@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../components/Header'
 import Profile from '../components/profile'
 import ApplyButtons from '../components/ApplyButtons'
+import Paragraph from '../components/Paragraph'
 
 import ProfileDatas from '../actions/ProfileData.js'
 
@@ -24,7 +25,7 @@ const Info = (props) => {
               <Profile
                 profile={profiles[path]}
               />
-              <p>{profiles[path].description}</p>
+              <Paragraph text={profiles[path].description} />
               <ApplyButtons
                 applyText="投票する"
                 applyAction={applyACtion}
@@ -34,7 +35,7 @@ const Info = (props) => {
           )
         } else {
           return (
-            <p>存在しません</p>
+            <Paragraph text="存在しません" />
           )
         }
       })()}

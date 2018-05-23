@@ -1,20 +1,22 @@
 import React from 'react';
 import { compose } from 'recompose';
 
+import Paragraph from '../components/Paragraph'
+
 import '../stylesheets/profile.css'
 
 const enhance = compose()
 
 const Profile = enhance(props => {
-  const { profile, link } = props
+  const { profile, link, style } = props
   return (
-    <div className="profileCard" style={profile.style}>
+    <div className="profileCard" style={style}>
       <img src={profile.img} className="profileImg" alt={profile.name} />
-      <p>名前：{profile.name}</p>
-      <p>種別：{profile.type}</p>
-      <p>年齢：{profile.age}</p>
-      <p>性別：{profile.sex}</p>
-      <p>飼主：{profile.master}</p>
+      <Paragraph text={"名前：" + profile.name} />
+      <Paragraph text={"種別：" + profile.type} />
+      <Paragraph text={"年齢：" + profile.age} />
+      <Paragraph text={"性別：" + profile.sex} />
+      <Paragraph text={"飼主：" + profile.master} />
       { link ? <p><a href={"/friends/" + link}>詳細ページへ</a></p> : null}
     </div>
   )
