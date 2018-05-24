@@ -21,6 +21,7 @@ const Friends = () => {
                 key={key}
                 profile={ProfileDatas[key]}
                 link={key}
+                style={{margin:'30px'}}
               />
             )
         })}
