@@ -1,5 +1,5 @@
-import React from 'react';
-import Button from 'material-ui/Button';
+import React from 'react'
+import Button from 'material-ui/Button'
 
 const Buttons = (props) => {
   const { applyText, applyAction, cancelLink } = props

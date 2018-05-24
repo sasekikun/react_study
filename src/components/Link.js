@@ -1,9 +1,6 @@
-import React from 'react';
-import { compose } from 'recompose';
+import React from 'react'
 
-const enhance = compose()
-
-const Link = enhance(props => {
+const Link = props => {
   const { text, anchor, style } = props
   return (
     <p style={style}>
@@ -12,6 +9,6 @@ const Link = enhance(props => {
       </a>
     </p>
   )
-})
+}
 
 export default Link

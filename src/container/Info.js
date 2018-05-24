@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import Header from '../components/Header'
 import Profile from '../components/Profile'
@@ -11,7 +11,7 @@ const applyACtion = (e) => {
   console.log("投票されたよー")
 }
 
-const Info = (props) => {
+const Info = props => {
   const profiles = ProfileDatas
   const path = props.match.params.name
   return (

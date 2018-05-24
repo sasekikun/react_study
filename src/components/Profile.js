@@ -1,13 +1,9 @@
 import React from 'react';
-import { compose } from 'recompose';
-
 import Paragraph from '../components/Paragraph'
 
 import '../stylesheets/profile.css'
 
-const enhance = compose()
-
-const Profile = enhance(props => {
+const Profile = props => {
   const { profile, link, style } = props
   return (
     <div className="profileCard" style={style}>
@@ -20,6 +16,6 @@ const Profile = enhance(props => {
       { link ? <p><a href={"/friends/" + link}>詳細ページへ</a></p> : null}
     </div>
   )
-})
+}
 
 export default Profile

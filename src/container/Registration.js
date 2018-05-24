@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 import TextField from 'material-ui/TextField'
 
@@ -7,7 +7,7 @@ import ApplyButtons from '../components/ApplyButtons'
 import Paragraph from '../components/Paragraph'
 import Uploader from '../components/Uploader'
 
-const applyACtion = (e) => {
+const applyACtion = e => {
   console.log("登録するよー")
 }
 
@@ -26,6 +26,8 @@ const Home = () => {
         <Paragraph text="年齢" />
         <TextField />
         <Paragraph text="性別" />
+        <TextField />
+        <Paragraph text="飼主" />
         <TextField />
         <ApplyButtons
           applyText="登録する"
