@@ -19,27 +19,15 @@ const Info = props => {
       <Header />
       <div style={{margin:'30px'}}>
         <h1>Profile</h1>
-        {(() => {
-          if (profiles[path] !== undefined) {
-            return (
-              <React.Fragment>
-                <Profile
-                  profile={profiles[path]}
-                />
-                <Paragraph text={profiles[path].description} />
-                <ApplyButtons
-                  applyText="投票する"
-                  applyAction={applyACtion}
-                  cancelLink="/friends/"
-                />
-              </React.Fragment>
-            )
-          } else {
-            return (
-              <Paragraph text="存在しません" />
-            )
-          }
-        })()}
+        <Profile
+          profile={profiles[path]}
+        />
+        <Paragraph text={profiles[path].description} />
+        <ApplyButtons
+          applyText="投票する"
+          applyAction={applyACtion}
+          cancelLink="/friends/"
+        />
       </div>
     </div>
   )

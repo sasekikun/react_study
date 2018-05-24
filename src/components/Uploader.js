@@ -15,11 +15,11 @@ class PositionedSnackbar extends React.Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <input type="file" ref="file" onChange={this.handleChangeFile} />
         <br />
         <img src={this.state.image_src} alt={this.state.image_src} style={{width: '200px', height:'auto'}} />
-      </div>
+      </React.Fragment>
     )
   }
 }

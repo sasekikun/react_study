@@ -1,5 +1,7 @@
 import React from 'react';
+
 import Paragraph from '../components/Paragraph'
+import Link from '../components/Link'
 
 import '../stylesheets/profile.css'
 
@@ -13,7 +15,7 @@ const Profile = props => {
       <Paragraph text={"年齢：" + profile.age} />
       <Paragraph text={"性別：" + profile.sex} />
       <Paragraph text={"飼主：" + profile.master} />
-      { link ? <p><a href={"/friends/" + link}>詳細ページへ</a></p> : null}
+      { link ? <Link text="詳細ページへ" anchor={"/friends/" + link} /> : null}
     </div>
   )
 }

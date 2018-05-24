@@ -19,7 +19,7 @@ const Friends = () => {
             return (
               <Profile
                 key={key}
-                profile={ProfileDatas[key]}
+                profile={datas[key]}
                 link={key}
                 style={{margin:'30px'}}
               />
